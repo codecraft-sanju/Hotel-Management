@@ -381,21 +381,9 @@ button:hover {
     letter-spacing: 1.4px;
 }
 
-.container-box {
-    display: flex;
-    width: 100%;
-    height: 750px;
-    justify-content: center;
-    align-items: center;
-}
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 1250px;
 
-}
+
 
 .box {
     background-image: url('room-01-1024x683.jpg');

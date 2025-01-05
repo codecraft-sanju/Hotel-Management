@@ -133,6 +133,42 @@
             font-size: 18px;
             color: #278ddb;
         }
+    
+        .services {
+            background-color: #ffffff;
+            padding: 40px 20px;
+        }
+    
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    
+        .service-item {
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+        }
+    
+        .service-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    
+        .service-item h4 {
+            margin-top: 15px;
+            color: #278ddb;
+            font-size: 18px;
+        }
+    
+        .service-item p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666666;
+        }
     </style>
 </head>
 
@@ -246,26 +282,31 @@
         </div>
     </div>
 
-    <div class="container-box">
-        <div class="container">
-            <div class="box">
-                <div class="label-price">
-                    <p>FROM 25$</p>
+  
+    <div class="services">
+        <div class="max-width-services">
+            <h2>Our Featured Services</h2>
+            <div class="services-container">
+                <div class="service-item">
+                    <img src="spa.jpg" alt="Spa Services">
+                    <h4>Spa Services</h4>
+                    <p>Relax and rejuvenate with our professional spa services.</p>
                 </div>
-                <div class="end-price">
-                    <h5>Double Room</h5>
+                <div class="service-item">
+                    <img src="dining.jpg" alt="Fine Dining">
+                    <h4>Fine Dining</h4>
+                    <p>Enjoy gourmet cuisine prepared by our world-class chefs.</p>
                 </div>
-                <div class="end-guest">
-                    <div class="left-guest">
-                        <p>guest</p>
-                    </div>
-                    <div class="right-guest">
-                        <p>23 ft</p>
-                    </div>
+                <div class="service-item">
+                    <img src="pool.jpg" alt="Luxury Pool">
+                    <h4>Luxury Pool</h4>
+                    <p>Take a dip in our stunning infinity pool with breathtaking views.</p>
                 </div>
             </div>
         </div>
     </div>
+    
+
     <div class="testimonials">
         <div class="max-width-testimonials">
             <h2>What Our Guests Say</h2>
