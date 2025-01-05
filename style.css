@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+
 }
 
 
@@ -237,7 +238,7 @@ button:hover {
 
 
 .slider-container {
-     /* background-color: yellow;  */
+    /* background-color: yellow;  */
 
     max-width: 100%;
     margin: auto;
@@ -249,15 +250,15 @@ button:hover {
     transition: transform 0.5s ease-in-out;
     margin-top: 40px;
     /* /*background-color: pink; */
-    *//*padding: 50px;
-     */:;
+    * //*padding: 50px;
+    */: ;
     -webkit-transition: transform 0.5s ease-in-out;
     -moz-transition: transform 0.5s ease-in-out;
     -ms-transition: transform 0.5s ease-in-out;
     -o-transition: transform 0.5s ease-in-out;
     padding-left: 50px;
-    padding:50px;
-    
+    padding: 50px;
+
 }
 
 .slide {
@@ -265,7 +266,7 @@ button:hover {
     box-sizing: border-box;
     padding: 30px;
 
-     /* background-color: red;  */
+    /* background-color: red;  */
 }
 
 .slide img {
@@ -400,4 +401,199 @@ button:hover {
     border: 2px solid #fff;
     font-size: 16px;
     font-weight: bold;
+}
+
+/* footer {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+} */
+footer {
+    background-color: #282828;
+    color: #ffffff;
+    padding-top: 40px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    margin-top: auto;
+
+    width: 100%;
+    height: 40%;
+
+}
+
+
+/* .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #278ddb;
+} */
+
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #bbbbbb;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #bbbbbb;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #3a9ed3;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media .social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #bbbbbb;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-media .social-icon:hover {
+    color: #4266b4;
+}
+
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    background-color: #202020;
+    color: #777777;
+    margin-top: 50px;
+    /* background-color: red; */
+
+
+
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom p a {
+    color: rgb(99, 99, 223);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom p a:hover {
+    text-decoration: underline;
+}
+
+
+
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #666666;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #278ddb;
+}
+
+.services {
+
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+.services-container {
+       justify-content: center;
+    display: flex;
+     
+    flex-wrap: wrap;
+     gap: 40px; 
+}
+
+.max-width-services {
+    text-align: center;
+}
+
+.service-item {
+
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.service-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-item h4 {
+    margin-top: 15px;
+    color: #278ddb;
+    font-size: 18px;
+}
+
+.service-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666666;
 }
