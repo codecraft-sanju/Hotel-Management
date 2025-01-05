@@ -237,7 +237,7 @@ button:hover {
 
 
 .slider-container {
-    background-color: yellow;
+     /* background-color: yellow;  */
 
     max-width: 100%;
     margin: auto;
@@ -248,8 +248,16 @@ button:hover {
     display: flex;
     transition: transform 0.5s ease-in-out;
     margin-top: 40px;
-    background-color: pink;
-    padding: 50px;
+    /* /*background-color: pink; */
+    *//*padding: 50px;
+     */:;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    padding-left: 50px;
+    padding:50px;
+    
 }
 
 .slide {
@@ -257,7 +265,7 @@ button:hover {
     box-sizing: border-box;
     padding: 30px;
 
-    background-color: red;
+     /* background-color: red;  */
 }
 
 .slide img {
@@ -279,6 +287,7 @@ button.prev, button.next {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
+
     /* padding: 10px; */
     z-index: 10;
 
