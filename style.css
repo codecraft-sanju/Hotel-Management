@@ -222,6 +222,8 @@ button:hover {
 
 
 .property-slider {
+    position: relative;
+
     text-align: center;
     font-family: Arial, sans-serif;
     display: flex;
@@ -235,10 +237,9 @@ button:hover {
 
 
 .slider-container {
-    position: relative;
     background-color: yellow;
-width:1310px;
-    /* max-width: 100%; */
+
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -254,9 +255,8 @@ width:1310px;
 .slide {
     min-width: 30%;
     box-sizing: border-box;
-     padding: 30px;  
-     padding-left: 30px;
-     padding-right: 30px;
+    padding: 30px;
+
     background-color: red;
 }
 
@@ -272,7 +272,7 @@ width:1310px;
 }
 
 button.prev, button.next {
-    
+
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -281,17 +281,17 @@ button.prev, button.next {
     border: none;
     /* padding: 10px; */
     z-index: 10;
-    
+
     cursor: pointer;
     border-radius: 50%;
 }
 
 button.prev {
-    left: 0px;
+    left: 80px;
 }
 
 button.next {
-    right: 0px;
+    right: 80px;
 }
 
 button:hover {
