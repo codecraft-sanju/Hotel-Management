@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    /* Semi-transparent background */
+    z-index: 10;
+    /* Ensure navbar is above the main-box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-box {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    padding-top: 70px;
+    /* Adjust top padding so content isn't hidden under the navbar */
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    /* Set to 1 so it's below the navbar */
+}
+
+.main-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    /* Keep this behind the main-box content */
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    /* Example text color */
+    font-weight: 500;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    color: #007bff;
+    /* Change color on hover */
+}
+
+button {
+    display: inline-block;
+    /* Ensures the button is displayed inline, but behaves like a block element */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+
+.wt {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space out child elements */
+    align-items: center;
+    /* Center items vertically */
+    color: white;
+    /* Text color for better visibility */
+    padding: 20px;
+    /* Padding around the text */
+    width: 1270px;
+    /* Set max width for .wt */
+    margin: 0 auto;
+    /* Center the .wt container */
+    position: relative;
+    /* Position relative for layering */
+    z-index: 2;
+    /* Ensure .wt is above the main-box */
+}
+
+.left-box {
+    width: 50%;
+    /* Set width to 40% */
+    height: 100%;
+    /* Limit the maximum width */
+}
+
+.left-box h1 {
+    font-size: 5.5rem;
+    /* Heading size */
+    margin-bottom: 20px;
+    z-index: 10;
+    line-height: 90px;
+    word-spacing: 4px;
+    letter-spacing: 1.2;
+    /* Space below the heading */
+}
+
+.left-box p {
+    font-size: 0.90rem;
+    /* Paragraph size */
+    line-height: 2.1;
+    /* Spacing between lines */
+    width: 90%;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.621);
+    word-spacing: 1px;
+}
+
+.right {
+    flex: 1;
+    /* Allows the right box to take up remaining space */
+}
+
+.box-in {
+    display: flex;
+    gap: 20px;
+    /* Add space between each .in-bx */
+}
+
+.in-bx {
+    display: flex;
+    flex-direction: column;
+    /* Align label and input vertically */
+    width: 100px;
+    /* Adjust width as needed */
+}
+
+.in-bx h5 {
+    margin-bottom: 5px;
+    /* Add space between label and input */
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* Flex container settings */
+.box-in {
+    display: flex;
+    gap: 50px;
+    /* Space between the .in-bx elements */
+    margin-top: 40px;
+    align-items: center;
+}
+
+/* Styling individual boxes */
+.in-bx {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+/* Remove border from inputs and buttons, adjust size */
+.in-bx input {
+    width: 130px;
+    /* Full width inside the .in-bx */
+    height: 40px;
+    /* Set height */
+    border: none;
+    /* Remove default border */
+    padding: 10px;
+    /* Add padding inside input/button */
+    /* Optional: rounded corners */
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect width */
+}
+
+/* Optional: Button specific styles */
+.box-in button {
+    background-color: #007BFF;
+    /* Blue button */
+    height: 40px;
+    margin-top: 30px;
+    font-size: 0.78rem;
+    border-radius: 0;
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Pointer on hover */
+}
+
+.in-bx button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+
+.property-slider {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    /* Add space above the slider */
+}
+
+
+.slider-container {
+    position: relative;
+    background-color: yellow;
+width:1310px;
+    /* max-width: 100%; */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 40px;
+    background-color: pink;
+    padding: 50px;
+}
+
+.slide {
+    min-width: 30%;
+    box-sizing: border-box;
+     padding: 30px;  
+     padding-left: 30px;
+     padding-right: 30px;
+    background-color: red;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide p {
+    margin-top: 10px;
+    font-weight: 500px;
+    font-size: 18px;
+}
+
+button.prev, button.next {
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    /* padding: 10px; */
+    z-index: 10;
+    
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 0px;
+}
+
+button.next {
+    right: 0px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.max-width-property {
+    max-width: 85%;
+
+}
+
+/* Container for the cards */
+.box-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 20px;
+}
+
+/* Child container holding the left and right card sections */
+.child-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Adjust the gap between the cards */
+    flex-wrap: wrap;
+    /* Ensures cards stack on smaller screens */
+    max-width: 1250px;
+    /* Restrict width for larger screens */
+}
+
+/* Styling for individual card sections */
+.left-card, .right-card {
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    width: 45%;
+    /* Two cards side by side */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Left side of the card (image part) */
+.card-l img {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 120px;
+}
+
+/* Right side of the card (text part) */
+.card-r {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Heading style */
+.card-r h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+}
+
+/* Paragraph style */
+.card-r p {
+    font-size: 0.95em;
+    color: #555;
+    letter-spacing: 1.4px;
+}
+
+.container-box {
+    display: flex;
+    width: 100%;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1250px;
+
+}
+
+.box {
+    background-image: url('room-01-1024x683.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 400px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
